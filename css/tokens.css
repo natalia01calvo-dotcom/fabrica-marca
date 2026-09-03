@@ -1,0 +1,64 @@
+/* EVOREN — Design tokens (fuente de verdad: proyecto "EVOREN Design System" en Claude Design) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Syne:wght@400;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Paleta — igual a tokens/colors.css del design system */
+  --ink-900: #111111;
+  --ink-800: #1a1a1a;
+  --ink-700: #333333;
+  --navy-900: #002642;
+  --navy-700: #0a3d63;
+  --lime-500: #ccff00;
+  --lime-600: #b8e600;
+  --lime-100: #f4ffd6;
+  --neutral-100: #f2f2f2;
+  --neutral-200: #e4e4e2;
+  --neutral-400: #a8a8a5;
+  --white: #ffffff;
+
+  --surface-primary: var(--ink-900);
+  --surface-secondary: var(--navy-900);
+  --surface-light: var(--neutral-100);
+  --surface-card-dark: var(--ink-800);
+  --surface-card-light: var(--white);
+  --text-on-dark: var(--white);
+  --text-on-dark-muted: rgba(255,255,255,.62);
+  --text-on-light: var(--ink-900);
+  --text-on-light-muted: rgba(17,17,17,.6);
+  --accent: var(--lime-500);
+  --accent-hover: var(--lime-600);
+  --accent-ink: var(--ink-900);
+  --border-on-dark: rgba(255,255,255,.14);
+  --border-on-light: rgba(17,17,17,.12);
+  --focus-ring: var(--lime-500);
+
+  /* Alias en español usados por las plantillas de assets */
+  --ev-azul-marino: var(--navy-900);
+  --ev-verde-lima: var(--lime-500);
+  --ev-negro: var(--ink-900);
+  --ev-gris-concreto: var(--ink-700);
+  --ev-blanco-calido: var(--neutral-100);
+  --ev-gris-claro: var(--neutral-400);
+
+  /* Tipografía — Syne es la voz de titulares; Playfair Display SC es SOLO acento (una línea por composición); Montserrat es el cuerpo */
+  --font-display: 'Syne', sans-serif;
+  --font-accent: 'Playfair Display SC', serif;
+  --font-body: 'Montserrat', sans-serif;
+  --ev-font-titular: var(--font-display);
+  --ev-font-logotipo: var(--font-display);
+  --ev-font-accent: var(--font-accent);
+  --ev-font-texto: var(--font-body);
+  --tracking-wide: 0.14em;
+
+  /* Espaciado — igual a tokens/spacing.css */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px;
+  --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px; --space-10: 128px;
+
+  /* Radios/sombras — igual a tokens/effects.css: contenedores casi sin curva; solo botones/badges usan pill */
+  --radius-sm: 2px; --radius-md: 4px; --radius-lg: 8px; --radius-pill: 999px;
+  --ev-radius-sm: var(--radius-sm);
+  --ev-radius-md: var(--radius-md);
+  --ev-radius-lg: var(--radius-lg);
+  --shadow-card: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.08);
+  --shadow-card-dark: 0 1px 2px rgba(0,0,0,.3), 0 12px 32px rgba(0,0,0,.45);
+}

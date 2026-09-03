@@ -1,0 +1,7 @@
+# Piezas generadas (salida, no código fuente)
+exports/*
+!exports/.gitkeep
+
+# Basura del sistema operativo
+Thumbs.db
+.DS_Store

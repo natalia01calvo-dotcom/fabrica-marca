@@ -1,0 +1,55 @@
+<!-- @dsCard group="Assets — Landing" viewport="480x640" name="Landing de campaña" subtitle="Página HTML autocontenida · hero + beneficios + cierre" -->
+<!--
+  REUTILIZABLE — campos: eyebrow, titulo (hero, requerido), texto (apoyo), datos
+  (líneas "Título: Descripción" → tarjetas de beneficios), cierre (frase final),
+  ctaTexto, imagen (fondo del hero, opcional).
+  Nota: la pieza de producción se exporta como HTML 100% autocontenido (fuentes e
+  imágenes embebidas) para poder alojarse en cualquier lugar sin depender de este
+  proyecto — esta card documenta el patrón visual usando los tokens compartidos.
+-->
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body{margin:0;background:var(--ink-900);color:var(--neutral-100);font-family:var(--font-body)}
+  .logo{display:flex;align-items:center;gap:10px}
+  .logo img{width:28px;height:28px}
+  .logo span{font-family:var(--font-display);font-weight:800;letter-spacing:var(--tracking-wide);text-transform:uppercase;font-size:13px}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:18px 24px}
+  .cta{display:inline-flex;align-items:center;background:var(--lime-500);color:var(--ink-900);font-weight:700;border-radius:var(--radius-pill);padding:10px 18px;text-decoration:none;font-size:13px}
+  header.hero{position:relative;padding:6vh 24px 8vh}
+  .eyebrow{font-weight:700;letter-spacing:var(--tracking-wide);text-transform:uppercase;color:var(--lime-500);font-size:11px}
+  h1{font-family:var(--font-display);font-weight:700;font-size:30px;line-height:1.05;margin:12px 0}
+  .sub{font-family:var(--font-accent);color:var(--neutral-400);font-size:15px;max-width:340px}
+  .rule{width:50px;height:5px;background:var(--lime-500);margin:18px 0}
+  section.beneficios{padding:5vh 24px;background:var(--neutral-100);color:var(--ink-900)}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
+  .card{border:1px solid var(--border-on-light);border-radius:var(--radius-md);padding:16px;background:rgba(0,38,66,.03)}
+  .card b{color:var(--navy-900);display:block;font-size:15px;margin-bottom:4px;font-family:var(--font-display);font-weight:700}
+  .card span{color:var(--ink-700);font-size:13px}
+  section.cierre{padding:6vh 24px;text-align:center;background:var(--ink-900)}
+  section.cierre h2{font-family:var(--font-display);font-weight:700;font-size:22px;margin:0 auto 18px}
+  footer{padding:18px 24px;display:flex;justify-content:space-between;color:var(--neutral-400);font-size:11px;border-top:1px solid var(--border-on-dark)}
+</style>
+<nav>
+  <div class="logo"><img src="../../assets/logos/evoren-symbol-lime.png" alt="EVOREN"><span>EVOREN</span></div>
+  <a class="cta" href="#contacto">Quiero saber más</a>
+</nav>
+<header class="hero">
+  <div class="eyebrow">Campaña</div>
+  <h1>Tu remodelación,<br>sin sorpresas</h1>
+  <div class="sub">Procesos claros, tecnología y acompañamiento real de principio a fin.</div>
+  <div class="rule"></div>
+  <a class="cta" href="#contacto">Quiero saber más</a>
+</header>
+<section class="beneficios">
+  <div class="eyebrow" style="color:var(--navy-900)">Por qué EVOREN</div>
+  <div class="grid">
+    <div class="card"><b>Transparencia</b><span>Presupuesto claro desde el día uno</span></div>
+    <div class="card"><b>Método</b><span>Procesos estandarizados y seguimiento</span></div>
+    <div class="card"><b>Financiación</b><span>Planes accesibles a tu medida</span></div>
+  </div>
+</section>
+<section class="cierre" id="contacto">
+  <h2>Hablemos de tu próximo proyecto.</h2>
+  <a class="cta" href="mailto:hola@evoren.co">Quiero saber más</a>
+</section>
+<footer><span>EVOREN · evoren.co</span><span>Confianza para transformar, desarrollar e invertir.</span></footer>
